@@ -1,7 +1,3 @@
-# Blockchain Trials
-Sample Code to get started with Blockchain
-
-
 # Sample App using STRATO
 
 Create STRATO instance on Azure
