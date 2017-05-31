@@ -13,6 +13,8 @@ OR install the developer trial edition
 Install blockapps-bloc
     https://www.npmjs.com/package/blockapps-bloc
 		
+Create Sample App 
+
     $ npm install -g blockapps-bloc
 	
     $ bloc init  (set app name "firstapp")
@@ -40,6 +42,24 @@ Install blockapps-bloc
     ## Use Post Man or Fiddler to brower through various API's
     ## GET http://localhost:8000/users
     
+# STRATO Pizza Demo
+
+    https://github.com/blockapps/pizza-demo
+
+    ## Deploy it in the same VM instances as STRATO
+
+    $ git clone https://github.com/blockapps/pizza-demo.git
+
+    ## Change Port 9001 to 9011 in DockerFile, docker-compose.yml and Gruntfile.js
+
+    $ sudo docker build -t pizza --build-arg STRATO=ubuntudev.westus.cloudapp.azure.com .
+
+    $ sudo docker-compose up
+
+    ## Open http://ubuntudev.westus.cloudapp.azure.com:9011/
+
+    
+
 
 
 
