@@ -5,13 +5,16 @@ Sample Code to get started with Blockchain
 # Sample App using STRATO
 
 Create STRATO instance on Azure
-    https://azuremarketplace.microsoft.com/en-us/marketplace/apps/blockapps.strato-blockchain-lts-vm?tab=Overview
+
+https://azuremarketplace.microsoft.com/en-us/marketplace/apps/blockapps.strato-blockchain-lts-vm?tab=Overview
 
 OR install the developer trial edition
-    https://github.com/blockapps/strato-getting-started
+
+https://github.com/blockapps/strato-getting-started
 
 Install blockapps-bloc
-    https://www.npmjs.com/package/blockapps-bloc
+
+https://www.npmjs.com/package/blockapps-bloc
 		
 Create Sample App 
 
@@ -44,7 +47,7 @@ Create Sample App
     
 # STRATO Pizza Demo
 
-    https://github.com/blockapps/pizza-demo
+Demo Code : https://github.com/blockapps/pizza-demo
 
     ## Deploy it in the same VM instances as STRATO
 
