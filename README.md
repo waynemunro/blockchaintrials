@@ -1,4 +1,4 @@
-# Sample App using STRATO
+# Create Sample App using STRATO
 
 Create STRATO instance on Azure
 
@@ -11,8 +11,6 @@ https://github.com/blockapps/strato-getting-started
 Install blockapps-bloc
 
 https://www.npmjs.com/package/blockapps-bloc
-		
-Create Sample App 
 
     $ npm install -g blockapps-bloc
 	
@@ -49,6 +47,8 @@ Demo Code : https://github.com/blockapps/pizza-demo
 
     $ git clone https://github.com/blockapps/pizza-demo.git
 
+    $ cd pizza-demo
+
     ## Change Port 9001 to 9011 in DockerFile, docker-compose.yml and Gruntfile.js
 
     $ sudo docker build -t pizza --build-arg STRATO=ubuntudev.westus.cloudapp.azure.com .
@@ -57,7 +57,50 @@ Demo Code : https://github.com/blockapps/pizza-demo
 
     ## Open http://ubuntudev.westus.cloudapp.azure.com:9011/
 
-    
+# TRUFFLE development
+
+Create Truffle environment on Azure using Marketplace
+
+https://azuremarketplace.microsoft.com/en-us/marketplace/apps/consensys.truffle
+
+OR install it on Windows
+
+http://truffleframework.com/tutorials/how-to-install-truffle-and-testrpc-on-windows-for-blockchain-development
+
+https://github.com/ethereumjs/testrpc/wiki/Installing-TestRPC-on-Windows   (this does not work currently due to sha3 vc++ compiling issue)
+
+    $ testrpc   (keep it running in a separate console session)
+
+    $ mkdir truffledemo
+    $ cd truffledemo
+
+    $ truffle init
+
+    ## edit the truffle.js file, change the rpc:host property from localhost to IP/DNS of the VM
+
+    $ truffle compile
+
+    $ truffle migrate
+
+    ## see the testrpc console session for transaction and contract activities
+
+    $ truffle build
+
+    $ truffle serve
+
+    ## Browse the Daap on port 8080 (http://truffledev.westus.cloudapp.azure.com:8080/)
+
+    ## Copy any account info from the account list shown by "testrpc" and send some metacoin to it
+
+    ## Now change the truffledmoe/app/javascripts/app.js to show the details of that account.
+    ## Update 'window.load' function account = account[0] to account = account[1] or whatever the index of the account.
+
+
+# Solidity In Visual Studio
+
+https://medium.com/@ConsenSys/solidity-integration-with-visual-studio-8bdab2ff8a74
+
+
 
 
 
